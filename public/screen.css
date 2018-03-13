@@ -7,3 +7,17 @@ body {
   min-height: 100%;
   font: 16px / 1 sans-serif;
 }
+
+h1 {
+  text-align: center;
+  margin: 2em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 8em;
+  padding: 6em;
+}
+
+
