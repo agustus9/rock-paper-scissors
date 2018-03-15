@@ -10,8 +10,48 @@ const playerChoice = (choice, player) => {
   player.choice = choice;
 }
 
+const checkGame = (playerOne, playerTwo) => {
+  console.log(playerOne, playerTwo);
+
+  // Check if both players have made their choices
+  if (!(playerOne.choice && playerTwo.choice)) {
+    console.log('Both players have not made a choice yet');
+    return;
+  }
+  console.log('Both players have made their choices');
+
+  // Calculate the winner
+  let playerOneWon = null;
+  if (playerOne.choice == rock) {
+    if (playerTwo.choice == paper) {
+      playerOneWon = false;
+    }
+    if (playerTwo.choice == scissor) {
+      playerOneWon = true;
+    }
+  }
+  else if (playerOne.choice == paper) {
+    if (playerTwo.choice == rock) {
+      playerOneWon = true;
+    }
+    if (playerTwo.choice == scissor) {
+      playerOneWon = false;
+    }
+  }
+  else if (playerOne.choice == scissor) {
+    if (playerTwo.choice == rock) {
+      playerOneWon = false;
+    }
+    if (playerTwo.choice == paper) {
+      playerOneWon = true;
+    }
+  }
+
+  // Restart Game
+}
+
 const main = () => {
- 
+
 }
 
 document.addEventListener('DOMContentLoaded', main)
