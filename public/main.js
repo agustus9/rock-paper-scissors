@@ -5,14 +5,9 @@ const scissor = 'Scissor';
 let playerOne = { choice: '' };
 let playerTwo = { choice: '' };
 
-const playerOneChoice = (choice) => {
-  console.log(`Player 1 choose: ${choice}`);
-  playerOne.choice = choice;
-}
-
-const playerTwoChoice = (choice) => {
-  console.log(`Player 2 choose: ${choice}`);
-  playerTwo.choice = choice;
+const playerChoice = (choice, player) => {
+  console.log(`Player.choice changed to: ${choice}`);
+  player.choice = choice;
 }
 
 const main = () => {
