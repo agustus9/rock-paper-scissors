@@ -46,6 +46,7 @@ const checkGame = (playerOne, playerTwo) => {
       playerOneWon = true;
     }
   }
+  // Show who won
 
   // Restart Game
 }
