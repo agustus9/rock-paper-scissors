@@ -47,8 +47,20 @@ const checkGame = (playerOne, playerTwo) => {
     }
   }
   // Show who won
+  let winner = document.querySelector(".win");
+  if (playerOneWon == null) {
+    winner.textContent = 'Winner: Draw'
+  } else if (playerOneWon == true) {
+    winner.textContent = 'Winner: Player One'
+  } else {
+    winner.textContent = 'Winner: Player Two'
+  }
+
 
   // Restart Game
+  playerOne.choice = "";
+  playerTwo.choice = "";
+  
 }
 
 const main = () => {
